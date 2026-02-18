@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewsTOP AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="brand-bar">
+      <p class="eyebrow">AI-only short updates</p>
+      <h1>NewsTOP AI</h1>
+      <button id="refreshBtn" aria-label="Refresh stories">Refresh</button>
+    </header>
+
+    <main id="feed" class="feed" aria-live="polite"></main>
+
+    <template id="storyTemplate">
+      <section class="story">
+        <div class="story-bg" aria-hidden="true"></div>
+        <article class="story-card">
+          <div class="card-meta">
+            <span class="source"></span>
+            <time class="time"></time>
+          </div>
+          <h2 class="title"></h2>
+          <p class="summary"></p>
+          <a class="read-more" target="_blank" rel="noreferrer noopener">Read full story</a>
+        </article>
+      </section>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
